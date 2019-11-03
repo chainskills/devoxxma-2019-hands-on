@@ -1,18 +1,18 @@
 # Demo with node and web3.js
 
-# Create project folders
+## Create project folders
 
     $ cd ~
     $ mkdir -p DevoxxMA2019/devoxxma2019-greetings-web3-solc; cd "$_"
     $ mkdir contracts
     $ mkdir build
 
-# Prepare Node project
+## Prepare Node project
 
     $ npm init
     keep all default values
 
-# Check versions supported by Truffe
+## Check versions supported by Truffe
 
     $ truffle version
     Truffle v5.0.43 (core: 5.0.43)
@@ -20,15 +20,15 @@
     Node v10.17.0
     Web3.js v1.2.1
 
-# Install dependecies (solc, web3)
+## Install dependecies (solc, web3)
 
     $ npm install web3@1.2.1 solc@0.5.8
 
-# Open code on Visual Studio Code
+## Open code on Visual Studio Code
 
     $ code .
 
-# Inspect package.json
+## Inspect package.json
 
     {
       "name": "hellodevoxx-solc",
@@ -46,7 +46,7 @@
       }
     }
 
-# Create the Greetings.sol smart contract
+## Create the Greetings.sol smart contract
 
     pragma solidity >=0.5.0 <0.6.0;
     contract Greetings {
@@ -62,7 +62,7 @@
         }
     }
 
-# Create the file compile.js
+## Create the file compile.js
 
     // Load a library to work with files and folders
     const path = require("path");
@@ -113,7 +113,7 @@
     module.exports.interface = output.contracts.contract.Greetings.abi;
     module.exports.bytecode = output.contracts.contract.Greetings.evm.bytecode.object;
 
-# Create the file deploy.js
+## Create the file deploy.js
 
     // Load library to interact with Ethereum nodes
     const Web3 = require("web3");
@@ -144,12 +144,12 @@
     // Deploy the contract
     deploy();
 
-# Deploy the contract
+## Deploy the contract
 
     $ node deploy
     contract address:  0x41307Ec332Fe70d26Dd9d1C15120B2b826491335
 
-# Start the Node console
+## Start the Node console
 
     node
 
@@ -157,7 +157,7 @@ You can clear the console using:
 
     > console.log('\033c')
 
-# Get an instance to the contract
+## Get an instance to the contract
 
     > Web3 = require('web3')
     ...
@@ -184,13 +184,13 @@ You can clear the console using:
 
     > instance = new web3.eth.Contract(contract.abi, "0x41307Ec332Fe70d26Dd9d1C15120B2b826491335")
 
-# Get current message
+## Get current message
 
     > instance.methods.getGreetings().call().then(console.log)
     ...
     > Hello from Devoxx Morocco 2019!
 
-# Change the message (with Promievents)
+## Change the message (with Promievents)
 
     > instance.methods.setGreetings("Welcome to Agadir!").send({from: accounts[0]}).on('transactionHash', hash =>{console.log(hash)}).then(console.log)
     0x55ada436caefe4709d7baf9d0d8980516920a6a807167f6780632b9f07956ec7
@@ -198,11 +198,11 @@ You can clear the console using:
        '0x55ada436caefe4709d7baf9d0d8980516920a6a807167f6780632b9f07956ec7',
       transactionIndex: 0,
 
-# Read the message
+## Read the message
 
     > instance.methods.getGreetings().call().then(console.log)
     Welcome to Agadir!
 
-# Quit the console
+## Quit the console
 
     .exit
