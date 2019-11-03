@@ -6,6 +6,7 @@ This reposity contains a summary of the instructions used in the different parts
 - Part 2: smart contract with Truffle
 - Part 3: unit testing with Truffle
 - Part 4: event listeners
+- Part 5: exceptions handling
 
 ## Learn more
 
