@@ -206,3 +206,7 @@ You can clear the console using:
 ## Quit the console
 
     .exit
+
+## Completed project
+
+    https://github.com/chainskills/devoxxma2019-greetings-web3-solc
