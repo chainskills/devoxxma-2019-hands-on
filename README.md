@@ -1,12 +1,17 @@
 # Devoxx Morocco 2019 - Develop a Dapp
 
-This reposity contains a summary of the instructions used in the different parts of the hand-on session:
+This reposity contains a summary of the instructions used in the different labs of the hand-on session:
 
 - Part 1: smart contract with Node.js, solc and web3.js
 - Part 2: smart contract with Truffle
 - Part 3: unit testing with Truffle
 - Part 4: event listeners
 - Part 5: exceptions handling
+
+
+Repositories are available here:
+
+
 
 ## Learn more
 
