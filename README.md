@@ -5,6 +5,7 @@
 Install all required tools.
 
 **Node.js (version 10)**
+
 https://nodejs.org/dist/latest-v10.x/
 
 **Command Line Tools - For Windows users**
@@ -27,6 +28,7 @@ https://www.trufflesuite.com/ganache
 
 
 **Metamask**
+
 https://metamask.io/
 
 **Visual Studio Code**
