@@ -1,4 +1,37 @@
-# Devoxx Morocco 2019 - Hand-on Labs: Develop a Decentralised Application
+# Develop a Decentralised Application (Hands-on Labs) - Devoxx Morocco 2019
+
+## Lab 0: Setup
+
+Install all required tools.
+
+**Node.js (version 10)**
+https://nodejs.org/dist/latest-v10.x/
+
+**Command Line Tools - For Windows users**
+
+    > npm install --global --production windows-build-tools
+    > npm install --global node-gyp
+
+**Command Line Tools - For Mac users**
+
+    $ xcode-select —install
+
+**Truffle**
+
+    npm uninstall -g truffle
+    npm install -g truffle 
+
+**Ganache**
+
+https://www.trufflesuite.com/ganache
+
+
+**Metamask**
+https://metamask.io/
+
+**Visual Studio Code**
+
+https://code.visualstudio.com/
 
 ## Lab 1: Create the smart contract
 
@@ -85,12 +118,3 @@ Final project:
 
 
 
-## Learn more
-
-If you want to know more about all the steps required to install, build and deploy a Dapp, you can subscribe to our course available on Udemy: https://www.udemy.com/getting-started-with-ethereum-solidity-development
-
-We have also a lean-published ebook available on leanpub: https://leanpub.com/blockchain-developer
-
-Have fun !!!
-
-ChainSkills Team - 2019
