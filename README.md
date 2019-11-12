@@ -63,7 +63,7 @@ Be more defensive by writing unit tests with Mocha and Chai.
 Final project:
 
 
-    git clone https://github.com/chainskills/devoxxma2019-greetings-truffle.git --branch step2 --single-branch step2
+    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step2.zip
 ## Lab 3: Events
 
 Be notified by listening for events.
@@ -71,7 +71,7 @@ Be notified by listening for events.
 Final project:
 
 
-    git clone https://github.com/chainskills/devoxxma2019-greetings-truffle.git --branch step3 --single-branch step3
+    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step3.zip
 ## Lab 4: Exception handling
 
 Through exceptions from your smart contract.
@@ -79,7 +79,7 @@ Through exceptions from your smart contract.
 Final project:
 
 
-    git clone https://github.com/chainskills/devoxxma2019-greetings-truffle.git --branch step4 --single-branch step4
+   https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step4.zip
 ## Lab 5: Payable functions
 
 Pay and transfer ETH.
@@ -87,7 +87,7 @@ Pay and transfer ETH.
 Final project:
 
 
-    git clone https://github.com/chainskills/devoxxma2019-greetings-truffle.git --branch step5 --single-branch step5
+    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step5.zip
 ## Lab 6: Deactivate the contract
 
 Cancel the usage of your smart contract.
@@ -96,7 +96,7 @@ Review kill vs enable/disable.
 Final project:
 
 
-    git clone https://github.com/chainskills/devoxxma2019-greetings-truffle.git --branch step6 --single-branch step6
+    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step6.zip
 ## Lab 7: Inheritance and Function modifiers
 
 Simplify the code with inheritance and function modifiers.
@@ -104,7 +104,7 @@ Simplify the code with inheritance and function modifiers.
 Final project:
 
 
-    git clone https://github.com/chainskills/devoxxma2019-greetings-truffle.git --branch step7 --single-branch step7
+    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step7.zip
 ## Lab 8: Install Drizzle
 
 Transform your app into a Dapp with Drizzle.
@@ -112,7 +112,7 @@ Transform your app into a Dapp with Drizzle.
 Final project:
 
 
-    git clone https://github.com/chainskills/devoxxma2019-greetings-truffle.git --branch step8 --single-branch step8
+   https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step8.zip
 ## Lab 9: Implement Drizzle
 
 Modify the Dapp to performs calls to the smart contract through Drizzle.
@@ -120,7 +120,7 @@ Modify the Dapp to performs calls to the smart contract through Drizzle.
 Final project:
 
 
-    git clone https://github.com/chainskills/devoxxma2019-greetings-truffle.git --branch step9 --single-branch step9
+    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step9.zip
 ## Lab 10: Deploy on public network
 
 Deploy the smart contract on Infura and the frontend on Github Pages.
@@ -128,7 +128,7 @@ Deploy the smart contract on Infura and the frontend on Github Pages.
 Final project:
 
 
-    git clone https://github.com/chainskills/devoxxma2019-greetings-truffle.git --branch step10 --single-branch step10
+    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step10.zip
 
 
 
