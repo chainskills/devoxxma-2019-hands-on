@@ -54,39 +54,35 @@ Compile, build and deploy a smart contract.
 
 Final project:
 
-     https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step1.zip
+https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step1.zip
 ## Lab 2: Unit Testing
 
 Be more defensive by writing unit tests with Mocha and Chai.
 
 Final project:
 
-
-    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step2.zip
+https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step2.zip
 ## Lab 3: Events
 
 Be notified by listening for events.
 
 Final project:
 
-
-    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step3.zip
+https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step3.zip
 ## Lab 4: Exception handling
 
 Through exceptions from your smart contract.
 
 Final project:
 
-
-   https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step4.zip
+https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step4.zip
 ## Lab 5: Payable functions
 
 Pay and transfer ETH.
 
 Final project:
 
-
-    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step5.zip
+https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step5.zip
 ## Lab 6: Deactivate the contract
 
 Cancel the usage of your smart contract.
@@ -94,40 +90,42 @@ Review kill vs enable/disable.
 
 Final project:
 
-
-    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step6.zip
+https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step6.zip
 ## Lab 7: Inheritance and Function modifiers
 
 Simplify the code with inheritance and function modifiers.
 
 Final project:
 
-
-    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step7.zip
+https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step7.zip
 ## Lab 8: Install Drizzle
 
 Transform your app into a Dapp with Drizzle.
 
 Final project:
 
-
-   https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step8.zip
+https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step8.zip
 ## Lab 9: Implement Drizzle
 
 Modify the Dapp to performs calls to the smart contract through Drizzle.
 
 Final project:
 
-
-    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step9.zip
+https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step9.zip
 ## Lab 10: Deploy on public network
 
 Deploy the smart contract on Infura and the frontend on Github Pages.
 
 Final project:
 
+https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step10.zip
 
-    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step10.zip
+## Learn more
+If you want to know more about all the steps required to install, build and deploy a Dapp, you can subscribe to our course available on Udemy: https://www.udemy.com/getting-started-with-ethereum-solidity-development
 
+We have also a lean-published ebook available on leanpub: https://leanpub.com/blockchain-developer
 
+Have fun !!!
+
+ChainSkills Team - 2019
 
