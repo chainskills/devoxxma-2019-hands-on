@@ -55,7 +55,7 @@ Compile, build and deploy a smart contract.
 Final project:
 
 
-    git clone https://github.com/chainskills/devoxxma2019-greetings-truffle.git --branch step1 --single-branch step1
+    https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step1.zip
 ## Lab 2: Unit Testing
 
 Be more defensive by writing unit tests with Mocha and Chai.
