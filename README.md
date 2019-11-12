@@ -35,6 +35,18 @@ https://metamask.io/
 
 https://code.visualstudio.com/
 
+**Documentation Solidity**
+
+https://solidity.readthedocs.io/
+
+**Documentation web3.js**
+
+https://web3js.readthedocs.io/en/v1.2.2/
+
+**Dcumentation Truffle Suite**
+
+https://www.trufflesuite.com/
+
 ## Lab 1: Create the smart contract
 
 Introduction to Truffle.
