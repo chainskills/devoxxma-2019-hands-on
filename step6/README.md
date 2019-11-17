@@ -1,4 +1,4 @@
-# Greetings Devoxx Morocco 2019: Enable or Disable the contract (Step 6)
+# Greetings Devoxx Morocco 2019: Deactivate the contract (Step 6)
 
 Sample Decentralised Application (Dapp) used at Devoxx Morocco 2019.
 
