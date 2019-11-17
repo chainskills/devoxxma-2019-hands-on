@@ -1,0 +1,51 @@
+const Greetings = artifacts.require('Greetings');
+
+// test suite
+describe('Greetings -> compliant with Mocha', () => {
+  let accounts;
+  let contractInstance;
+  const defaultMessage = 'Hello from Devoxx Morocco 2019!';
+  const newMessage = 'Hello from Agadir!';
+  const errorMessage = 'The message should not be empty!';
+
+  before(async () => {
+    accounts = await web3.eth.getAccounts();
+    contractInstance = await Greetings.new();
+  });
+
+  it('should let us get the initial message', async () => {
+    // check that we have properly deployed our contract
+    assert.equal(
+      await contractInstance.getGreetings(),
+      defaultMessage,
+      'The default greetings message shoud be ' + defaultMessage
+    );
+  });
+
+  it('should let us change the initial message', async () => {
+    // change the greetings message
+    await contractInstance.setGreetings(newMessage, {
+      from: accounts[1]
+    });
+
+    // check that we have properly deployed our contract
+    assert.equal(
+      await contractInstance.getGreetings(),
+      newMessage,
+      'The new greetings message shoud be ' + newMessage
+    );
+  });
+  
+  it('should throw an exception if the message is empty', async () => {
+    try {
+      // try to save an emoty message
+      await contractInstance.setGreetings('', {
+        from: accounts[1]
+      });
+
+      assert.fail();
+    } catch (err) {
+      assert.equal(err.reason, errorMessage, 'error must be ' + errorMessage);
+    }
+  });
+});

@@ -1,0 +1,20 @@
+.avatar .paper {
+  float: left !important;
+  position: relative !important;
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 100% !important;
+  vertical-align: top !important;
+  margin-top: 15px !important;
+}
+
+.account {
+  position: relative;
+  top: 12px;
+  padding-left: 12px;
+}
+
+.balance {
+  position: relative;
+  padding-left: 55px;
+}

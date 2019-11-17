@@ -1,0 +1,26 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "Sample Ethereum smart contract using Truffle 5, Ganache and web3.js 1.x.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chainskills/devoxxma2019-greetings-truffle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chainskills/devoxxma2019-greetings-truffle/issues"
+  },
+  "homepage": "https://github.com/chainskills/devoxxma2019-greetings-truffle#readme",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "prettier-plugin-solidity": "^1.0.0-alpha.34"
+  }
+}

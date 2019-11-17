@@ -1,0 +1,187 @@
+const Greetings = artifacts.require('Greetings');
+
+// test suite
+describe('Greetings -> compliant with Mocha', () => {
+  let contractInstance;
+  const serviceFee = '10000000000000000';
+  const defaultMessage = 'Hello from Devoxx Morocco 2019!';
+  const newMessage = 'Hello from Agadir!';
+  const errorEmptyMessage = 'The message should not be empty!';
+  const errorNotOwner = 'Your are not the owner of this contract!';
+  const errorServiceFee = 'Your service fee is not correct!';
+
+  before(async () => {
+    accounts = await web3.eth.getAccounts();
+    contractInstance = await Greetings.new(web3.utils.toBN(serviceFee));
+  });
+
+  it('should let us get the initial settings', async () => {
+    // check that we have properly deployed our contract
+
+    assert.equal(
+      await contractInstance.getGreetings(),
+      defaultMessage,
+      'The default greetings message shoud be ' + defaultMessage
+    );
+
+    assert.equal(
+      web3.utils.toBN(await contractInstance.getServiceFee()).toString(),
+      serviceFee,
+      'The service fee must be ' + serviceFee
+    );
+
+    assert.equal(
+      web3.utils
+        .toBN(await web3.eth.getBalance(contractInstance.address))
+        .toString(),
+      '0',
+      'The balance must be 0'
+    );
+
+    assert.equal(
+      await contractInstance.owner(),
+      accounts[0],
+      'The contract owner must be ' + accounts[0]
+    );
+  });
+
+  it('should let us change the initial message', async () => {
+    // change the greetings message
+    const receipt = await contractInstance.setGreetings(newMessage, {
+      from: accounts[1],
+      gas: 500000,
+      value: web3.utils.toBN(serviceFee)
+    });
+
+    assert.equal(
+      receipt.logs.length,
+      1,
+      'one event should have been triggered'
+    );
+
+    assert.equal(
+      receipt.logs[0].event,
+      'GreetingsChangedEvent',
+      'event should be GreetingsChangedEvent'
+    );
+
+    assert.equal(
+      receipt.logs[0].args._account,
+      accounts[1],
+      'the caller must be ' + accounts[1]
+    );
+
+    assert.equal(
+      receipt.logs[0].args._greetings,
+      newMessage,
+      'the new message must be ' + newMessage
+    );
+
+    assert.equal(
+      await contractInstance.getGreetings(),
+      newMessage,
+      'The new greetings message shoud be ' + newMessage
+    );
+
+    assert.equal(
+      web3.utils
+        .toBN(await web3.eth.getBalance(contractInstance.address))
+        .toString(),
+      serviceFee,
+      'The balance must be ' + serviceFee
+    );
+  });
+
+  it('should throw an exception if the message is empty', async () => {
+    try {
+      // try to save an new message
+      await contractInstance.setGreetings('', {
+        from: accounts[1],
+        gas: 500000,
+        value: web3.utils.toBN(serviceFee)
+      });
+
+      assert.fail();
+    } catch (err) {
+      assert.equal(
+        err.reason,
+        errorEmptyMessage,
+        'error must be ' + errorEmptyMessage
+      );
+    }
+  });
+
+  it('should throw an exception if the service fee is incorrect', async () => {
+    try {
+      // try to save an new message
+      await contractInstance.setGreetings('Another message', {
+        from: accounts[1],
+        gas: 500000,
+        value: web3.utils.toBN(serviceFee).sub(web3.utils.toBN(1))
+      });
+
+      assert.fail();
+    } catch (err) {
+      assert.equal(
+        err.reason,
+        errorServiceFee,
+        'error must be ' + errorServiceFee
+      );
+    }
+
+    // ensure that the greetings message didn't change
+    assert.equal(
+      await contractInstance.getGreetings(),
+      newMessage,
+      'The greetings message shoud be ' + newMessage
+    );
+  });
+
+  it('should throw an exception if transfer of earnings is not initiated by the owner', async () => {
+    try {
+      // try to transfer earnings
+      await contractInstance.transferEarning({
+        from: accounts[1],
+        gas: 500000
+      });
+
+      assert.fail();
+    } catch (err) {
+      assert.equal(err.reason, errorNotOwner, 'error must be ' + errorNotOwner);
+    }
+  });
+
+  it('should let us transfer earnings', async () => {
+    // keep the balance before the transaction
+    let balance = await web3.eth.getBalance(accounts[0]);
+    const balanceAccountBefore = web3.utils.fromWei(balance, 'ether');
+
+    balance = await web3.eth.getBalance(contractInstance.address);
+    const balanceContractBefore = web3.utils.fromWei(balance, 'ether');
+
+    // transfer the earnings to the contract's owner
+    await contractInstance.transferEarning({
+      from: accounts[0],
+      gas: 500000
+    });
+
+    // get the balance after the transfer
+    balance = await web3.eth.getBalance(accounts[0]);
+    const balanceAccountAfter = web3.utils.fromWei(balance, 'ether');
+
+    // check the balance of the contract owner
+    assert(
+      balanceAccountAfter > balanceAccountBefore,
+      'The contract owner should have earned  ' + balanceContractBefore + ' ETH'
+    );
+
+    // check the balance of the contract
+    assert.equal(
+      web3.utils
+        .toBN(await web3.eth.getBalance(contractInstance.address))
+        .toString(),
+      '0',
+      'The balance must be 0'
+    );
+  });
+});
