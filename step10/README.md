@@ -9,9 +9,11 @@ The step 10 is focusing on the deployment to public networks:
 
 Deploying to a test public network allow your uses to test your Dapp before planning the Go Live in the MainNet.
 
-## 1. Clone the project
+# 1. Open the project
 
-`git clone https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step10.zip
+Clone the repository: https://github.com/chainskills/devoxxma-2019-hands-on.git
+
+Open the folder **step10**.
 
 ## 2. Install dependecies
 

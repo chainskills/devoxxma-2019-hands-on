@@ -29,9 +29,11 @@ To build, deploy and test your Dapp locally, you need to install the following t
 - **Ganache**: https://github.com/trufflesuite/ganache
   - Development Ethereum node.
 
-## 1. Clone the project
+## 1. Open the project
 
-`git clone https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step1.zip
+Clone the repository: https://github.com/chainskills/devoxxma-2019-hands-on.git
+
+Open the folder **step1**.
 
 ## 2. Start your Ethereum node
 

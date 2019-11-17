@@ -4,9 +4,11 @@ Sample Ethereum smart contract using Truffle 5, Ganache and web3.js 1.x.
 
 The step 5 implements the payable functions.
 
-## 1. Clone the project
+# 1. Open the project
 
-`git clone https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step5.zip
+Clone the repository: https://github.com/chainskills/devoxxma-2019-hands-on.git
+
+Open the folder **step5**.
 
 ## 2. Start your Ethereum node
 

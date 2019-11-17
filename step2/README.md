@@ -18,9 +18,11 @@ All the prerequisites have been properly installed:
 - truffle
 - Ganache
 
-## 1. Clone the project
+# 1. Open the project
 
-`git clone https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step2.zip
+Clone the repository: https://github.com/chainskills/devoxxma-2019-hands-on.git
+
+Open the folder **step2**.
 
 ## 2. Start your Ethereum node
 

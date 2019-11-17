@@ -4,9 +4,11 @@ Sample Decentralised Application (Dapp) used at Devoxx Morocco 2019.
 
 The step 6 allows the contract owner to enable or disable the contract.
 
-## 1. Clone the project
+# 1. Open the project
 
-`git clone https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step6.zip
+Clone the repository: https://github.com/chainskills/devoxxma-2019-hands-on.git
+
+Open the folder **step6**.
 
 ## 2. Start your Ethereum node
 

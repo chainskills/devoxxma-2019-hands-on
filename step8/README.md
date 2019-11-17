@@ -17,9 +17,11 @@ To interact with the Greetings smart contract through the Dapp, you have to inst
 
 When you install Metamask, keep the seed phrase (12 words) in a safe place. If you expose your seed phrase, anyone would be able to create same accounts as your and to get access to your wallets and to sign transactions on your behalf.
 
-## 1. Clone the project
+# 1. Open the project
 
-`git clone https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step8.zip
+Clone the repository: https://github.com/chainskills/devoxxma-2019-hands-on.git
+
+Open the folder **step8**.
 
 ## 2. Install dependecies
 

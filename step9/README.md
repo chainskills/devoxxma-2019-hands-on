@@ -4,9 +4,11 @@ Sample Decentralised Application (Dapp) used at Devoxx Morocco 2019.
 
 The step 9 connects the front-end application to the smart contract in order to obtain a real Decentralised Application driven through Web3 and Drizzle.
 
-## 1. Clone the project
+# 1. Open the project
 
-`git clone https://github.com/chainskills/devoxxma2019-greetings-truffle/archive/step9.zip
+Clone the repository: https://github.com/chainskills/devoxxma-2019-hands-on.git
+
+Open the folder **step9**.
 
 ## 2. Install dependecies
 
