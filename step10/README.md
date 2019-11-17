@@ -133,6 +133,10 @@ Run the dapp:
 
 ## 11. Interact with the contract
 
+The Dapp deployed for the talk is available here: https://chainskills.github.io/devoxxma-2019-hands-on
+
+Metamask has to be switched to Ropsten and you have to create an account and ask some ETH.
+
 Through the Greeetings Dapp, interact with the smart contract:
 
 - Switch Metamask accounts to see that additional features are only available for the contract owner
