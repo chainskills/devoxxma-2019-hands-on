@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://chainskills.github.io/devoxxma2019-greetings-truffle/",
+  "homepage": "http://chainskills.github.io/devoxxma-2019-hands-on",
   "dependencies": {
     "@drizzle/react-plugin": "^1.5.1",
     "@drizzle/store": "^1.5.1",
