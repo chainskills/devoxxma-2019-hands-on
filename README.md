@@ -1,5 +1,9 @@
 # Develop a Decentralised Application (Hands-on Labs) - Devoxx Morocco 2019
 
+This repository is related to a talk made at Devoxx Morocco 2019 (Agadir).
+
+The slides related to this talk are available here: http://bit.ly/2NMjA2T
+
 ## Lab 0: Setup
 
 Install all required tools.
